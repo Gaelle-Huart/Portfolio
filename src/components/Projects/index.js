@@ -13,6 +13,11 @@ const ProjectsList = [
         used to get your website up and running quickly.
       </>
     ),
+    tags: (
+      <>
+        HTML / SASS / Responsive Design / Figma
+      </>
+    )
   },
   {
     title: 'Sophie Bluel',
@@ -22,6 +27,11 @@ const ProjectsList = [
         Un site portfolio pour une architecte d'intérieur qui se veut réactif et intuitif. Le projet comprend une interface administrateur pour permettre à l'architecte de modifier son portfolio en toute simplicité.
       </>
     ),
+    tags: (
+      <>
+        SASS / JavaScript
+      </>
+    )
   },
   {
     title: 'Kasa',
@@ -31,6 +41,11 @@ const ProjectsList = [
         Kasa est une application de location de logements à l'interface claire et au design soigné. 
       </>
     ),
+    tags: (
+      <>
+        React / SASS
+      </>
+    )
   },
   {
     title: 'Nina Carducci',
@@ -40,6 +55,11 @@ const ProjectsList = [
         Un projet d'optimisation dédié aux sites vitrine. Ici, la photographe Nina Carducci avait un site plutôt lent et mal optimisé qui rendait le chargement des pages très longs. Après optimisation, tout et fluide et surtout rapide.
       </>
     ),
+    tags: (
+      <>
+        JavaScript / SASS / SEO / Accessibility
+      </>
+    )
   },
   {
     title: '724Events',
@@ -50,6 +70,11 @@ const ProjectsList = [
         be extended while reusing the same header and footer.
       </>
     ),
+    tags: (
+      <>
+        JavaScript / Debbugging / Unit Testing
+      </>
+    )
   },
   {
     title: 'ArgentBank',
@@ -60,10 +85,15 @@ const ProjectsList = [
         be extended while reusing the same header and footer.
       </>
     ),
+    tags: (
+      <>
+        React / SASS / JavaScript / Redux
+      </>
+    )
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Project({Svg, title, description, tags}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -72,6 +102,9 @@ function Feature({Svg, title, description}) {
       <div className="padding-horiz--md">
         <Heading as="h3" className='text--center'>{title}</Heading>
         <p className='text--justify'>{description}</p>
+      </div>
+      <div className="text--center padding-horiz--md">
+        {tags}
       </div>
     </div>
   );
@@ -84,7 +117,7 @@ export default function Projects() {
         <Heading as="h2" className={styles.title}>Projets</Heading>
         <div className="row">
           {ProjectsList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+            <Project key={idx} {...props} />
           ))}
         </div>
       </div>
