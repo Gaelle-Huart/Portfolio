@@ -74,12 +74,12 @@ const config = {
             position: 'right',
           },
           {
-            href: '/#skills',
+            href: '#skills',
             label: 'Skills',
             position: 'right',
           },
           {
-            href: '/#contact',
+            href: '#contact',
             label: 'Contact',
             position: 'right',
           },
