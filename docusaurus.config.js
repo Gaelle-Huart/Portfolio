@@ -69,8 +69,18 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: '#projects',
+            label: 'Projects',
+            position: 'right',
+          },
+          {
+            href: '/#skills',
+            label: 'Skills',
+            position: 'right',
+          },
+          {
+            href: '/#contact',
+            label: 'Contact',
             position: 'right',
           },
         ],

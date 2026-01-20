@@ -30,3 +30,7 @@
   --ifm-background-color: #0f1d33;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.hash-link {
+  display: none;
+}

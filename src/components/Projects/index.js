@@ -114,7 +114,7 @@ export default function Projects() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <Heading as="h2" className={styles.title}>Projets</Heading>
+        <Heading id="projects" as="h2" className={styles.title}>Projects</Heading>
         <div className="row">
           {ProjectsList.map((props, idx) => (
             <Project key={idx} {...props} />
