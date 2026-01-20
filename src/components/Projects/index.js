@@ -1,10 +1,11 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Card from '../Card/index';
 
 const ProjectsList = [
   {
-    title: 'Easy to Use',
+    title: 'OhmyFood',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
@@ -14,27 +15,44 @@ const ProjectsList = [
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Sophie Bluel',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Un site portfolio pour une architecte d'intérieur qui se veut réactif et intuitif. Le projet comprend une interface administrateur pour permettre à l'architecte de modifier son portfolio en toute simplicité.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Kasa',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Kasa est une application de location de logements à l'interface claire et au design soigné. 
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Nina Carducci',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: (
+      <>
+        Un projet d'optimisation dédié aux sites vitrine. Ici, la photographe Nina Carducci avait un site plutôt lent et mal optimisé qui rendait le chargement des pages très longs. Après optimisation, tout et fluide et surtout rapide.
+      </>
+    ),
+  },
+  {
+    title: '724Events',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+  {
+    title: 'ArgentBank',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
@@ -51,9 +69,9 @@ function Feature({Svg, title, description}) {
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className="padding-horiz--md">
+        <Heading as="h3" className='text--center'>{title}</Heading>
+        <p className='text--justify'>{description}</p>
       </div>
     </div>
   );
@@ -63,6 +81,7 @@ export default function Projects() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <Heading as="h2" className={styles.title}>Projets</Heading>
         <div className="row">
           {ProjectsList.map((props, idx) => (
             <Feature key={idx} {...props} />

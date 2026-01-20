@@ -1,0 +1,12 @@
+.cardContainer {
+  background-color: #003757;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.cardContainer:hover {
+  border: 2px;
+  border-color: #19c3cf;
+  background-color: #00436b;
+}

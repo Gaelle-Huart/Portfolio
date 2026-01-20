@@ -1,11 +1,28 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem 0;
   width: 100%;
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+.title {
+  text-align: center;
+  opacity: 20%;
+}
+
+.cardContainer {
+  background-color: #003757;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.cardContainer:hover {
+  border: #19c3cf solid thin;
+  background-color: #00436b;
 }
