@@ -1,4 +1,4 @@
-.features {
+.section {
   display: flex;
   align-items: center;
   padding: 2rem 0 3rem 0;
@@ -11,8 +11,8 @@
 }
 
 .title {
+  color: #ffffff;
   text-align: center;
-  opacity: 20%;
 }
 
 .cardContainer {

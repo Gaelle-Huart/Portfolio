@@ -5,6 +5,7 @@ import Projects from '@site/src/components/Projects';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import Skills from '../components/Skills';
 
 function Hero() {
   const {siteConfig} = useDocusaurusContext();
@@ -29,6 +30,7 @@ export default function Home() {
       <Hero />
       <main>
         <Projects />
+        <Skills />
       </main>
     </Layout>
   );

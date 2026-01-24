@@ -1,0 +1,30 @@
+.section {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 3rem 0;
+  width: 100%;
+}
+
+.title {
+  color: #ffffff;
+  text-align: center;
+}
+
+.cardContainer {
+  height: 97px;
+  width: 97px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.cardContainer:hover {
+  border: 2px;
+  border-color: #19c3cf;
+  background-color: #aecbdc;
+}
+
+.inline {
+  display: inline;
+}

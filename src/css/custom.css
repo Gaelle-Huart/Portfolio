@@ -42,3 +42,9 @@
 .hash-link {
   display: none;
 }
+
+.title {
+  color: white;
+  text-align: center;
+  opacity: 20%;
+}

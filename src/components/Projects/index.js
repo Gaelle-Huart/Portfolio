@@ -94,7 +94,7 @@ function Project({Svg, title, description, tags}) {
 
 export default function Projects() {
   return (
-    <section className={styles.features}>
+    <section className={styles.section}>
       <div className="container">
         <Heading id="projects" as="h2" className={styles.title}>Projects</Heading>
         <div className="row">
