@@ -6,7 +6,7 @@
 }
 
 .featureSvg {
-  height: 200px;
+  height: 160px;
   width: 200px;
 }
 
@@ -16,13 +16,25 @@
 }
 
 .cardContainer {
-  background-color: #003757;
+  background-color: aliceblue;
   border: none;
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
+  margin: 10px 0 15px 0;
 }
 
 .cardContainer:hover {
-  border: #19c3cf solid thin;
-  background-color: #00436b;
+  border: 4px solid #ffffff;
+  background-color: #e0eef9;
+  padding: 1px;
+  margin: 6px 0 11px 0;
+}
+
+[data-theme='dark'] .cardContainer {
+  background-color: #005c92;
+}
+
+[data-theme='dark'] .cardContainer:hover {
+  border: 4px solid #005c92;
+  background-color: #00649e;
 }

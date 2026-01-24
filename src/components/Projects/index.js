@@ -2,6 +2,10 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Card from '../Card/index';
+import Tag from '../Tags';
+
+
+const tags = ["React", "SASS", "JavaScript", "HTML", "CSS", "Redux", "Debbugging", "Unit Testing", "SEO", "Accessibility", "Responsive Design", "Figma"];
 
 const ProjectsList = [
   {
@@ -9,72 +13,50 @@ const ProjectsList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        This mobile first website is showcasing the front end of a gourmet application allowing the users to select a restaurant, take an order online and eat their meal as soon as they step foot into it.
       </>
     ),
-    tags: (
-      <>
-        HTML / SASS / Responsive Design / Figma
-      </>
-    )
+    tags: [3, 1, 10, 11]
   },
   {
     title: 'Sophie Bluel',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Un site portfolio pour une architecte d'intérieur qui se veut réactif et intuitif. Le projet comprend une interface administrateur pour permettre à l'architecte de modifier son portfolio en toute simplicité.
+        A protfolio website for an interior designer meant to be both reactive and intuitive. The project include an administrator interface allowing the designer to modify it with simplicity.
       </>
     ),
-    tags: (
-      <>
-        SASS / JavaScript
-      </>
-    )
+    tags: [1, 2]
   },
   {
     title: 'Kasa',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Kasa est une application de location de logements à l'interface claire et au design soigné. 
+        Kasa is a rental application showcasing many features. The properties to rent are given a lot of design elements that allow the final user to browse efficiently.
       </>
     ),
-    tags: (
-      <>
-        React / SASS
-      </>
-    )
+    tags: [0, 1]
   },
   {
     title: 'Nina Carducci',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Un projet d'optimisation dédié aux sites vitrine. Ici, la photographe Nina Carducci avait un site plutôt lent et mal optimisé qui rendait le chargement des pages très longs. Après optimisation, tout et fluide et surtout rapide.
+        A project focusing on optimization. The photographer had a slow and poorly optimized website which was making its loading rather long. Post optimization, everything is smooth and fast.
       </>
     ),
-    tags: (
-      <>
-        JavaScript / SASS / SEO / Accessibility
-      </>
-    )
+    tags: [2, 3, 8, 9]
   },
   {
     title: '724Events',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        After installing React Developer Tools, the task was to fix multiple bugs, create and run many tests to make sure everything was working properly and write the associated documentation.
       </>
     ),
-    tags: (
-      <>
-        JavaScript / Debbugging / Unit Testing
-      </>
-    )
+    tags: [2, 6, 7],
   },
   {
     title: 'ArgentBank',
@@ -85,27 +67,27 @@ const ProjectsList = [
         be extended while reusing the same header and footer.
       </>
     ),
-    tags: (
-      <>
-        React / SASS / JavaScript / Redux
-      </>
-    )
+    tags: [0, 1, 2, 5]
   },
 ];
 
 function Project({Svg, title, description, tags}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="padding-horiz--md">
-        <Heading as="h3" className='text--center'>{title}</Heading>
-        <p className='text--justify'>{description}</p>
-      </div>
-      <div className="text--center padding-horiz--md">
-        {tags}
-      </div>
+      <Card shadow='tl' className={styles.cardContainer}>
+        <div className="text--center">
+          <Svg className={styles.featureSvg} role="img" />
+        </div>
+        <div className="padding-horiz--md">
+          <Heading as="h3" className='text--center'>{title}</Heading>
+          <p className='text--justify'>{description}</p>
+        </div>
+        <div className="text--center padding-horiz--md padding-vertic--md">
+          <Tag>
+            {tags}
+          </Tag>
+        </div>
+      </Card>
     </div>
   );
 }

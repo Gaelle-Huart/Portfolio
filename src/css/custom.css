@@ -6,15 +6,19 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #13243f;
-  --ifm-color-primary-dark: #003757;
-  --ifm-color-primary-darker: #003452;
-  --ifm-color-primary-darkest: #002b44;
-  --ifm-color-primary-light: #00436b;
-  --ifm-color-primary-lighter: #004670;
-  --ifm-color-primary-lightest: #004f7e;
-  --ifm-background-color: #d0dcf2;
+  --ifm-color-primary: #00436b;
+  --ifm-color-primary-dark: #003c60;
+  --ifm-color-primary-darker: #00395b;
+  --ifm-color-primary-darkest: #002f4b;
+  --ifm-color-primary-light: #004a76;
+  --ifm-color-primary-lighter: #004d7b;
+  --ifm-color-primary-lightest: #00578b;
+  --ifm-navbar-link-hover-color: #005c92;
+  --ifm-background-color: #dee5f2;
+  --ifm-navbar-background-color: #dee5f2;
+  --ifm-footer-background-color: #dee5f2;
   --ifm-code-font-size: 95%;
+  --ifm-font-color-base: #000;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -27,7 +31,11 @@
   --ifm-color-primary-light: #7de8f0;
   --ifm-color-primary-lighter: #8bebf1;
   --ifm-color-primary-lightest: #b8f3f7;
-  --ifm-background-color: #0f1d33;
+  --ifm-navbar-link-hover-color: #005c92;
+  --ifm-navbar-background-color: #0c263a;
+  --ifm-footer-background-color: #0c263a;
+  --ifm-background-color: #0c263a;
+  --ifm-font-color-base: #fff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 

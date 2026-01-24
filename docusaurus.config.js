@@ -65,7 +65,7 @@ const config = {
       navbar: {
         logo: {
           alt: 'Gaelle Huart',
-          src: 'img/logo.png',
+          src: 'img/logo-transparent.svg',
         },
         items: [
           {
@@ -86,26 +86,6 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} Gaelle Huart. Built with Docusaurus.`,
       },
       prism: {
