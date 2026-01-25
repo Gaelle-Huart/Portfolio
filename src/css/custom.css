@@ -48,3 +48,15 @@
   text-align: center;
   opacity: 20%;
 }
+
+.about {
+  text-align: justify;
+  font-size: 15px;
+}
+
+.inlineSkills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,7 +1,7 @@
 .section {
   display: flex;
   align-items: center;
-  padding: 2rem 0 3rem 0;
+  padding: 3rem 0 4rem 0;
   width: 100%;
 }
 
@@ -10,21 +10,29 @@
   text-align: center;
 }
 
-.cardContainer {
-  height: 97px;
-  width: 97px;
+.skillContainer {
+  height: 120px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
   background-color: aliceblue;
   border: none;
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
+  margin: 10px;
 }
 
-.cardContainer:hover {
-  border: 2px;
+.skillContainer:hover {
   border-color: #19c3cf;
-  background-color: #aecbdc;
+  background-color: #e0eef9;
 }
 
-.inline {
-  display: inline;
+.skill {
+  width: fit-content;
+}
+
+.skillSvg {
+  width: 97px;
+  align-self: center;
+  justify-self: center;
 }

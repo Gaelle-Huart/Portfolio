@@ -11,6 +11,11 @@
   background-color: #f0f8ff;
 }
 
+.about {
+  text-align: justify;
+  font-size: 20px;
+}
+
 [data-theme='dark'] .heroBanner {
   background-color: #005c92;
 }
