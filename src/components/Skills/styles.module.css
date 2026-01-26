@@ -6,7 +6,7 @@
 }
 
 .title {
-  color: #ffffff;
+  color: #0c263a;
   text-align: center;
 }
 
@@ -33,6 +33,7 @@
 
 .skillSvg {
   width: 97px;
+  max-height: 97px;
   align-self: center;
   justify-self: center;
 }

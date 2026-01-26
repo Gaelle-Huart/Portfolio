@@ -12,6 +12,7 @@
 }
 
 .about {
+  color: #0c263a;
   text-align: justify;
   font-size: 20px;
 }
@@ -33,21 +34,21 @@
 }
 
 [data-theme='light'] .hero__title {
-  color: black;
+  color: #0c263a;
   font-size: 3rem;
 }
 
 [data-theme='light'] .hero__subtitle {
-  color: black;
+  color: #0c263a;
   font-size: 1.5rem;
 }
 
 [data-theme='dark'] .hero__title {
-  color: white;
+  color: #dee5f2;
   font-size: 3rem;
 }
 
 [data-theme='dark'] .hero__subtitle {
-  color: white;
+  color: #dee5f2;
   font-size: 1.5rem;
 }

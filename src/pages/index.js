@@ -16,7 +16,7 @@ function Hero() {
           {siteConfig.title}
         </Heading>
         <p className={styles.hero__subtitle}>{siteConfig.tagline}</p>
-        <p className={styles.about}>Hi, I'm Gaelle and I welcome you on my portfolio web. After completing my web integrator training at OpenClassrooms, I am now able to create effective and engaging web projects. Please, have a look around. And don't hesitate to contact me!</p>
+        <p className={styles.about}>Hi, I'm Gaelle. Welcome on my portfolio! After completing my web integrator training at OpenClassrooms, I am now able to create effective and engaging web projects. Please, have a look around. And don't hesitate to contact me!</p>
       </div>
     </header>
   );
