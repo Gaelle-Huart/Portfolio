@@ -80,7 +80,7 @@ function Project({Svg, title, description, tags}) {
         </div>
         <div className="padding-horiz--md">
           <Heading as="h3" className='text--center'>{title}</Heading>
-          <p className='text--justify'>{description}</p>
+          <p className='text--justify summary'>{description}</p>
         </div>
         <div className="text--center padding-horiz--md padding-vertic--md">
           <Tag>

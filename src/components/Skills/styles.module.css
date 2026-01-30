@@ -15,16 +15,17 @@
   width: 120px;
   align-items: center;
   justify-content: center;
-  background-color: aliceblue;
+  background-color: #fdf9f1;
   border: none;
   border-radius: 20px;
   padding: 5px;
   margin: 10px;
+  transition: transform 0.3s ease;
 }
 
 .skillContainer:hover {
-  border-color: #19c3cf;
-  background-color: #e0eef9;
+  background-color: #fef6e8;
+  transform: translateY(-8px);
 }
 
 .skill {

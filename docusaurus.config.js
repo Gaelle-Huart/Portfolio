@@ -65,7 +65,8 @@ const config = {
       navbar: {
         logo: {
           alt: 'Gaelle Huart',
-          src: 'img/logo-transparent.svg',
+          src: 'img/logo-seul.png',
+          srcDark: 'img/logo-fond.png'
         },
         items: [
           {

@@ -8,7 +8,7 @@
   padding: 4rem 0;
   position: relative;
   overflow: hidden;
-  background-color: #f0f8ff;
+  background-color: #fdf9f1;
 }
 
 .about {
@@ -44,11 +44,11 @@
 }
 
 [data-theme='dark'] .hero__title {
-  color: #dee5f2;
+  color: #f2eade;
   font-size: 3rem;
 }
 
 [data-theme='dark'] .hero__subtitle {
-  color: #dee5f2;
+  color: #f2eade;
   font-size: 1.5rem;
 }

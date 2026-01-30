@@ -14,9 +14,9 @@
   --ifm-color-primary-lighter: #004d7b;
   --ifm-color-primary-lightest: #00578b;
   --ifm-navbar-link-hover-color: #005c92;
-  --ifm-background-color: #dee5f2;
-  --ifm-navbar-background-color: #dee5f2;
-  --ifm-footer-background-color: #dee5f2;
+  --ifm-background-color: #f2eade;
+  --ifm-navbar-background-color: #f2eade;
+  --ifm-footer-background-color: #f2eade;
   --ifm-code-font-size: 95%;
   --ifm-font-color-base: #0c263a;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -35,8 +35,31 @@
   --ifm-navbar-background-color: #0c263a;
   --ifm-footer-background-color: #0c263a;
   --ifm-background-color: #0c263a;
-  --ifm-font-color-base: #dee5f2;
+  --ifm-font-color-base: #f2eade;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* light grey color for light mode and text was #dee5f2 in the last version. */
+/* light color for hero banner was #f0f8ff. */
+
+.navbar {
+  padding-left: 30px;
+}
+
+.navbar--fixed-top {
+  height: 70px;
+}
+
+.navbar__brand {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  align-items: self-start;
+}
+
+.navbar__logo img {
+  width: 50px;
+  height: 50px;
 }
 
 .hash-link {
