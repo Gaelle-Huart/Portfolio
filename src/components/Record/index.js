@@ -1,14 +1,60 @@
+import clsx from 'clsx';
 import styles from './styles.module.css';
-import recordMD from '../Record/record.md';
+import Heading from '@theme/Heading';
+import Card from '../Card';
 
-const RecordInfo = recordMD;
 
-export default function Record() {
+const timelineData = [
+  {
+    text: 'Studying with OpenClassrooms, in the Web Integrator course.',
+    date: '2025-2026',
+  },
+  {
+    text: 'Working as a self employed painter.',
+    date: '2020-2025',
+  },
+  {
+    text: 'Making many projects as an Illustrator.',
+    date: '2012-2020',
+  },
+  {
+    text: 'Higher art study at ESMI, Bordeaux, sanctionned by a diploma.',
+    date: '2008-2012',
+  },
+  {
+    text: 'Contemporary literature studies at Bordeaux III University.',
+    date: '2006-2008',
+  },
+  {
+    text: 'Graduated from Max Linder, Libourne.',
+    date: '2001-2006',
+  }
+]
+
+function TimelineItem({ text, date }) {
   return (
-    <div className='recordContainer'>
-      <p>{RecordInfo}</p>
+    <div className={styles.timelineItem}>
+      <Card shadow='md' className={styles.cardContainer}>
+        <div className="padding-horiz--md">
+          <p className='summary'>{text}</p>
+          <time className='text--center'>{date}</time>
+        </div>
+      </Card>
     </div>
   )
 }
 
-/*construire un vrai composant avec timeline serait sans doute plus intéressant qu'un affichage basique de haut en bas comme je le prévoyais jusque là... Il va falloir faire quelques recherches pour trouver comment le construire. */
+export default function Record() {
+  return (
+    <section className={styles.section}>
+      <div className={styles.recordContainer}>
+        <Heading id="record" as="h2" className={styles.title}>Record</Heading>
+        <div className={styles.timelineContainer}>
+          {timelineData.map((props, idx) => (
+            <TimelineItem key={idx} {...props} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

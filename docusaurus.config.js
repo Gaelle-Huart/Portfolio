@@ -60,7 +60,8 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'light',
+        respectPrefersColorScheme: false,
       },
       navbar: {
         logo: {
@@ -77,6 +78,11 @@ const config = {
           {
             href: '#skills',
             label: 'Skills',
+            position: 'right',
+          },
+          {
+            href: '#record',
+            label: 'Record',
             position: 'right',
           },
           {

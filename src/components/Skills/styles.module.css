@@ -6,7 +6,6 @@
 }
 
 .title {
-  color: #0c263a;
   text-align: center;
 }
 
@@ -26,6 +25,14 @@
 .skillContainer:hover {
   background-color: #fef6e8;
   transform: translateY(-8px);
+}
+
+[data-theme='dark'] .skillContainer {
+  background-color: #005c92;
+}
+
+[data-theme='dark'] .skillContainer:hover {
+  background-color: #00649e;
 }
 
 .skill {

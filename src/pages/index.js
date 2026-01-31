@@ -33,6 +33,7 @@ export default function Home() {
       <main>
         <Projects />
         <Skills />
+        <Record />
       </main>
     </Layout>
   );

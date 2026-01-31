@@ -71,7 +71,7 @@ const ProjectsList = [
   },
 ];
 
-function Project({Svg, title, description, tags}) {
+function Project({ Svg, title, description, tags }) {
   return (
     <div className={clsx('col col--4')}>
       <Card shadow='tl' className={styles.cardContainer}>
