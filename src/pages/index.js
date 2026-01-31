@@ -1,11 +1,12 @@
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import Projects from '@site/src/components/Projects';
-
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import Skills from '../components/Skills';
+
+import Projects from '@site/src/components/Projects';
+import Skills from '@site/src/components/Skills';
+import Record from '@site/src/components/Record';
 
 function Hero() {
   const {siteConfig} = useDocusaurusContext();
