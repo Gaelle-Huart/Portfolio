@@ -23,6 +23,8 @@ function Hero() {
   );
 }
 
+/* Dans la partie Hero, rajouter quatre boutons '+' ronds (fond sombre, signe clair) qui lorsqu'on clique dessus font apparaître un autre morceau de texte en remplacement de celui de base. Un cinquième bouton, ciglé à l'éffigie de Github, est un lien qui renvoie à mon profil sur github... À essayer. */
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
