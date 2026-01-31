@@ -20,7 +20,8 @@
 
 .cardContainer:hover {
   background-color: #fef6e8;
-  transform: translateX(8px);
+  /* transform: translateX(8px); */
+  transform: scale(105%);
 }
 
 [data-theme='dark'] .cardContainer {
@@ -32,6 +33,7 @@
 }
 
 .recordContainer {
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -46,7 +48,7 @@
   position: absolute;
   left: calc(50% - 2px);
   width: 3px;
-  height: 92%;
+  height: 68%;
 }
 
 [data-theme='dark'] .timelineContainer:after {
@@ -59,7 +61,8 @@
   padding-right: 30px;
   position: relative;
   margin: 5px 0;
-  width: 50%;
+  width: 60%;
+  z-index: 1;
 }
 
 .timelineItem:nth-child(odd) {
