@@ -5,8 +5,6 @@ import Card from '../Card/index';
 import Tag from '../Tags';
 
 
-const tags = ["React", "SASS", "JavaScript", "HTML", "CSS", "Redux", "Debbugging", "Unit Testing", "SEO", "Accessibility", "Responsive Design", "Figma"];
-
 const ProjectsList = [
   {
     title: 'OhmyFood',
@@ -16,7 +14,7 @@ const ProjectsList = [
         This mobile first website is showcasing the front end of a gourmet application allowing the users to select a restaurant, take an order online and eat their meal as soon as they step foot into it.
       </>
     ),
-    tags: [3, 1, 10, 11]
+    tags: ['HTML', 'SASS', 'Figma', 'Responsive Design'],
   },
   {
     title: 'Sophie Bluel',
@@ -26,7 +24,7 @@ const ProjectsList = [
         A protfolio website for an interior designer meant to be both reactive and intuitive. The project include an administrator interface allowing the designer to modify it with simplicity.
       </>
     ),
-    tags: [1, 2]
+    tags: ['SASS', 'JavaScript']
   },
   {
     title: 'Kasa',
@@ -36,7 +34,7 @@ const ProjectsList = [
         Kasa is a rental application showcasing many features. The properties to rent are given a lot of design elements that allow the final user to browse efficiently.
       </>
     ),
-    tags: [0, 1]
+    tags: ['React', 'SASS']
   },
   {
     title: 'Nina Carducci',
@@ -46,7 +44,7 @@ const ProjectsList = [
         A project focusing on optimization. The photographer had a slow and poorly optimized website which was making its loading rather long. Post optimization, everything is smooth and fast.
       </>
     ),
-    tags: [2, 3, 8, 9]
+  tags: ['JavaScript', 'SASS', 'SEO', 'Accessibility']
   },
   {
     title: '724Events',
@@ -56,7 +54,7 @@ const ProjectsList = [
         After installing React Developer Tools, the task was to fix multiple bugs, create and run many tests to make sure everything was working properly and write the associated documentation.
       </>
     ),
-    tags: [2, 6, 7],
+    tags: ['JavaScript', 'Debbugging', 'Unit Testing'],
   },
   {
     title: 'ArgentBank',
@@ -67,7 +65,7 @@ const ProjectsList = [
         be extended while reusing the same header and footer.
       </>
     ),
-    tags: [0, 1, 2, 5]
+    tags: ['React', 'JavaScript', 'SASS', 'Redux']
   },
 ];
 
@@ -83,9 +81,9 @@ function Project({ Svg, title, description, tags }) {
           <p className='text--justify summary'>{description}</p>
         </div>
         <div className="text--center padding-horiz--md padding-vertic--md">
-          <Tag>
-            {tags}
-          </Tag>
+          {tags.map((tag) => (
+            <Tag key={tag} tagName={tag} />
+          ))}
         </div>
       </Card>
     </div>

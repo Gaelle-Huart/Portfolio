@@ -1,0 +1,65 @@
+.tag {
+  width: fit-content;
+  padding: 3px 5px 3px 5px;
+  margin: 0 5px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.react {
+  border: 4px solid #a8f5fc;
+}
+
+.sass {
+  border: 4px solid #e8a5e9;
+}
+
+.javascript {
+  border: 4px solid #ffea8d;
+}
+
+.html {
+  border: 4px solid #fcbf79;
+}
+
+.css {
+  border: 4px solid #9dc6f0;
+}
+
+.redux {
+  border: 4px solid #b4a2fc;
+}
+
+.debbugging {
+  border: 4px solid #ffb6b6;
+}
+
+.unit {
+  border: 4px solid #d9d8d6;
+}
+
+.seo {
+  border: 4px solid #d7f9ad;
+}
+
+.accessibility {
+  border: 4px solid #abc5e8;
+  
+}
+
+.responsive {
+  border: 4px solid #a2e4a3;
+  
+}
+
+.figma {
+  border: 4px solid #fd9191;
+  
+}
+
+.default {
+  border: 4px solid #ffffff;
+  
+}

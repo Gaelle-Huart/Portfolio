@@ -35,9 +35,9 @@ function TimelineItem({ text, date }) {
   return (
     <div className={styles.timelineItem}>
       <Card shadow='md' className={styles.cardContainer}>
-        <div className="padding-horiz--md">
-          <p className='summary'>{text}</p>
-          <time className='text--center'>{date}</time>
+        <div className={styles.itemContent}>
+          <p className={styles.recordText}>{text}</p>
+          <time className={styles.recordTime}>{date}</time>
         </div>
       </Card>
     </div>

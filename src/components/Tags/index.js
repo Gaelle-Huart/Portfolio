@@ -1,16 +1,26 @@
-import clsx from "clsx";
+import styles from "./styles.module.css";
 
-const Tag = ({
-  className,
-  style,
-  children,
-  shadow,
-}) => {
-  const cardShadow = shadow ? `item shadow--${shadow}` : '';
+
+const tagColor = {
+  React: styles.react,
+  SASS: styles.sass,
+  JavaScript: styles.javascript,
+  HTML: styles.html,
+  CSS: styles.css,
+  Redux: styles.redux,
+  Debbugging: styles.debbugging,
+  'Unit Testing': styles.unit,
+  SEO: styles.seo,
+  Accessibility: styles.accessibility,
+  'Responsive Design': styles.responsive,
+  Figma: styles.figma,
+}
+
+export default function Tag({ tagName }) {
+  const colorClass = tagColor[tagName] ?? styles.default ;
   return (
-    <div className={clsx('tag', className, cardShadow)} style={style}>
-      {children}
-    </div>
-  );
-};
-export default Tag;
+    <span className={`${styles.tag} ${colorClass}`}>
+      {tagName}
+    </span>
+  )
+}
