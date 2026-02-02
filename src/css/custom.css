@@ -70,12 +70,6 @@
   display: none;
 }
 
-.title {
-  color: white;
-  text-align: center;
-  opacity: 20%;
-}
-
 .about {
   text-align: justify;
   font-size: 15px;

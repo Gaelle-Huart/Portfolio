@@ -1,12 +1,18 @@
 .section {
   display: flex;
   align-items: center;
-  padding: 3rem 0 4rem 0;
+  padding: 3rem 0 10rem 0;
   width: 100%;
+  background-color: #fdf9f1;
+}
+
+[data-theme='dark'] .section {
+  background-color: #03476e;
 }
 
 .title {
   text-align: center;
+  margin-bottom: 150px;
 }
 
 .skillContainer {
@@ -28,11 +34,24 @@
 }
 
 [data-theme='dark'] .skillContainer {
-  background-color: #005c92;
+  background-color: #03476e; 
+  /* #005c92 */
 }
 
 [data-theme='dark'] .skillContainer:hover {
-  background-color: #00649e;
+  background-color: #005c92;
+  /* #00649e */
+}
+
+.inlineSkills {
+  display: flex;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f2eade;
+}
+
+[data-theme='dark'] .inlineSkills {
+  background-color: #0c263a;
 }
 
 .skill {

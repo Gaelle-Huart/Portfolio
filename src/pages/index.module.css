@@ -11,13 +11,21 @@
   background-color: #fdf9f1;
 }
 
+[data-theme='dark'] .heroBanner {
+  background-color: #03476e;
+  /* background-color: #005c92; */
+}
+
 .about {
   text-align: justify;
   font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #f2eade;
 }
 
-[data-theme='dark'] .heroBanner {
-  background-color: #005c92;
+[data-theme='dark'] .about {
+  background-color: #0c263a;
 }
 
 @media screen and (max-width: 996px) {

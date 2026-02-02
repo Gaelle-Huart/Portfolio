@@ -31,7 +31,7 @@ const ProjectsList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Kasa is a rental application showcasing many features. The properties to rent are given a lot of design elements that allow the final user to browse efficiently.
+        Kasa is a rental application showcasing many features. The properties to rent are given a lot of design elements that allow the final user to browse efficiently and in style.
       </>
     ),
     tags: ['React', 'SASS']
@@ -61,8 +61,7 @@ const ProjectsList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        In the project, the goal was to implement the frontend of an online banking application with the help of React. Interactivity and reactivity were the main objectives for me.
       </>
     ),
     tags: ['React', 'JavaScript', 'SASS', 'Redux']

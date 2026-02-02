@@ -44,8 +44,8 @@ export default function Skills() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <Heading id="skills" as="h2" className={styles.title}>Skills</Heading>
-        <div className="inlineSkills">
+        <Heading id='skills' as="h2" className={styles.title}>Skills</Heading>
+        <div className={styles.inlineSkills}>
           {SkillList.map((props, idx) => (
             <Skill key={idx} {...props} />
           ))}

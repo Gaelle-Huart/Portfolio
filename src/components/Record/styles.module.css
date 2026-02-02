@@ -24,11 +24,11 @@
 }
 
 [data-theme='dark'] .cardContainer {
-  background-color: #005c92;
+  background-color: #03476e;
 }
 
 [data-theme='dark'] .cardContainer:hover {
-  background-color: #00649e;
+  background-color: #005c92;
 }
 
 .recordContainer {

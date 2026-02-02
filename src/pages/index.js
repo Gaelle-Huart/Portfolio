@@ -7,6 +7,7 @@ import styles from './index.module.css';
 import Projects from '@site/src/components/Projects';
 import Skills from '@site/src/components/Skills';
 import Record from '@site/src/components/Record';
+import Contact from '@site/src/components/Contact';
 
 function Hero() {
   const {siteConfig} = useDocusaurusContext();
@@ -36,6 +37,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Record />
+        <Contact />
       </main>
     </Layout>
   );
