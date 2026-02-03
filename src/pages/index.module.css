@@ -28,12 +28,6 @@
   background-color: #0c263a;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .buttons {
   display: flex;
   align-items: center;
@@ -58,4 +52,21 @@
 [data-theme='dark'] .hero__subtitle {
   color: #f2eade;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 0.5rem;
+  }
+  .about {
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  [data-theme='light'] .hero__title {
+    font-size: 2rem;
+  }
+  [data-theme='light'] .hero__subtitle {
+    font-weight: 300;
+  }
 }

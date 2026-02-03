@@ -15,12 +15,12 @@
   border-radius: 10px;
   padding: 10px;
   margin: 5px 0;
-  transition: transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(12, 38, 58, 0.2);
 }
 
 .cardContainer:hover {
   background-color: #fef6e8;
-  transform: scale(102%);
+  box-shadow: 0 0 10px rgba(12, 38, 58, 0.4);
 }
 
 [data-theme='dark'] .cardContainer {
@@ -28,7 +28,7 @@
 }
 
 [data-theme='dark'] .cardContainer:hover {
-  background-color: #005c92;
+  box-shadow: 0 0 6px rgba(253, 249, 241, 0.8);
 }
 
 .recordContainer {
@@ -47,7 +47,7 @@
   position: absolute;
   left: calc(50% - 2px);
   width: 3px;
-  height: 62%;
+  height: 71%;
 }
 
 [data-theme='dark'] .timelineContainer:after {
@@ -71,10 +71,25 @@
   padding-right: 0;
 }
 
+.timelineItem h3 {
+  display: flex;
+  justify-content: start;
+  font-size: 18px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.timelineItem:nth-child(odd) h3 {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+
 .timelineItem p {
   display: flex;
   justify-content: start;
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 5px;
   padding-left: 20px;
 }
 
@@ -87,10 +102,18 @@
 .timelineItem time {
   display: flex;
   justify-content: end;
+  font-size: 18px;
   font-weight: 600;
+  padding-right: 10px;
+  line-height: normal;
 }
 
 .timelineItem:nth-child(odd) time {
   display: flex;
   justify-content: start;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  
 }

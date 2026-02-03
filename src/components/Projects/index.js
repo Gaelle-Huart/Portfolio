@@ -44,7 +44,7 @@ const ProjectsList = [
         A project focusing on optimization. The photographer had a slow and poorly optimized website which was making its loading rather long. Post optimization, everything is smooth and fast.
       </>
     ),
-  tags: ['JavaScript', 'SASS', 'SEO', 'Accessibility']
+    tags: ['JavaScript', 'SASS', 'SEO', 'Accessibility']
   },
   {
     title: '724Events',
@@ -71,7 +71,7 @@ const ProjectsList = [
 function Project({ Svg, title, description, tags }) {
   return (
     <div className={clsx('col col--4')}>
-      <Card shadow='tl' className={styles.cardContainer}>
+      <Card className={styles.cardContainer}>
         <div className="text--center">
           <Svg className={styles.featureSvg} role="img" />
         </div>

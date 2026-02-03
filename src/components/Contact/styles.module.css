@@ -47,8 +47,16 @@
   margin-top: 8px;
 }
 
+.field::placeholder {
+  color: #0c263a;
+}
+
+[data-theme='dark'] .field::placeholder {
+  color: #fdf9f1;
+}
+
 [data-theme='dark'] .field {
-  border: 2px solid #fdf9f1;
+  border: 2px solid #005c92;
   background-color: #03476e;
 }
 
@@ -67,8 +75,19 @@
   font-size: 16px;
   font-weight: 600;
   margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(12, 38, 58, 0.2);
+}
+
+.contactForm button:hover {
+  background-color: #fef6e8;
+  box-shadow: 0 0 10px rgba(12, 38, 58, 0.4);
 }
 
 [data-theme='dark'] .contactForm button {
   background-color: #03476e;
+}
+
+[data-theme='dark'] .contactForm button:hover {
+  box-shadow: 0 0 5px rgba(253, 249, 241, 0.8);
 }

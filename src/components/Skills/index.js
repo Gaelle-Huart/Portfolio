@@ -5,36 +5,72 @@ import Card from '../Card/index';
 
 const SkillList = [
   {
-    Svg:require('@site/static/img/HTML5_logo.svg').default
+    title: 'HTML 5',
+    Svg:require('@site/static/img/HTML5_logo.svg').default,
+    alt: 'HTML 5',
   },
   {
-    Svg:require('@site/static/img/CSS3_logo.svg').default
+    title: 'CSS 3',
+    Svg:require('@site/static/img/CSS3_logo.svg').default,
+    alt: 'CSS 3',
   },
   {
-    Svg:require('@site/static/img/JavaScript_logo.svg').default
+    title: 'SEO',
+    Svg:require('@site/static/img/seo.svg').default,
+    alt: 'SEO',
   },
   {
-    Svg:require('@site/static/img/React-icon.svg').default
+    title: 'JavaScript',
+    Svg:require('@site/static/img/JavaScript_logo.svg').default,
+    alt: 'JavaScript',
   },
   {
-    Svg:require('@site/static/img/redux-logo.svg').default
+    title: 'React',
+    Svg:require('@site/static/img/React-icon.svg').default,
+    alt: 'React',
   },
   {
-    Svg:require('@site/static/img/Git_icon.svg').default
+    title: 'Debug',
+    Svg:require('@site/static/img/debug.svg').default,
+    alt: 'Debug',
   },
   {
-    Svg:require('@site/static/img/github-noir.svg').default
+    title: 'Redux',
+    Svg:require('@site/static/img/redux-logo.svg').default,
+    alt: 'Redux',
   },
   {
-    Svg:require('@site/static/img/Sass_Logo_Color.svg').default
+    title: 'Accessibility',
+    Svg:require('@site/static/img/accessibility.svg').default,
+    alt: 'Accessibility',
+  },
+  {
+    title: 'Git',
+    Svg:require('@site/static/img/Git_icon.svg').default,
+    alt: 'Git',
+  },
+  {
+    title: 'Github',
+    Svg:require('@site/static/img/github-noir.svg').default,
+    alt: 'Github',
+  },
+  {
+    title: 'Sass',
+    Svg:require('@site/static/img/Sass_Logo_Color.svg').default,
+    alt: 'Sass',
+  },
+  {
+    title: 'Responsive',
+    Svg:require('@site/static/img/responsive.svg').default,
+    alt: 'Responsive',
   },
 ]
 
-function Skill({Svg}) {
+function Skill({ title, Svg, alt }) {
   return (
     <div className='skill'>
-      <Card shadow='tl' className={styles.skillContainer}>
-        <Svg className={styles.skillSvg} role="img" />
+      <Card className={styles.skillContainer}>
+        <Svg className={styles.skillSvg} role="img" title={title} alt={alt} />
       </Card>
     </div>
   );
@@ -43,7 +79,7 @@ function Skill({Svg}) {
 export default function Skills() {
   return (
     <section className={styles.section}>
-      <div className="container">
+      <div className={styles.allSkillsContainer}>
         <Heading id='skills' as="h2" className={styles.title}>Skills</Heading>
         <div className={styles.inlineSkills}>
           {SkillList.map((props, idx) => (
