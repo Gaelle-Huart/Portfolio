@@ -4,6 +4,8 @@
  */
 
 .heroBanner {
+  display: flex;
+  flex-direction: column;
   height: 30rem;
   padding: 4rem 0;
   position: relative;
