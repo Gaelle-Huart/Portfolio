@@ -5,9 +5,10 @@ const Card = ({
   className, // Custom classes for the container card
   style, // Custom styles for the container card
   children, // Content to be included within the card
+  onClick
 }) => {
   return (
-    <div className={clsx('card', className)} style={style}>
+    <div className={clsx('card', className)} style={style} onClick={onClick}>
       {children}
     </div>
   );

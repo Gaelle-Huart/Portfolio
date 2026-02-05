@@ -1,8 +1,10 @@
 import clsx from 'clsx';
+import { useState } from 'react';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Card from '../Card/index';
 import Tag from '../Tags';
+import Modal from '../Modal';
 
 
 const ProjectsList = [
@@ -68,10 +70,10 @@ const ProjectsList = [
   },
 ];
 
-function Project({ Svg, title, description, tags }) {
+function Project({ Svg, title, description, tags, onClick }) {
   return (
     <div className={clsx('col col--4')}>
-      <Card className={styles.cardContainer}>
+      <Card className={styles.cardContainer} onClick={onClick}>
         <div className="text--center">
           <Svg className={styles.featureSvg} role="img" />
         </div>
@@ -90,16 +92,34 @@ function Project({ Svg, title, description, tags }) {
 }
 
 export default function Projects() {
+  const [activeProject, setActiveProject] = useState(null);
   return (
     <section className={styles.section}>
       <div className="container">
         <Heading id="projects" as="h2" className={styles.title}>Projects</Heading>
         <div className="row">
-          {ProjectsList.map((props, idx) => (
-            <Project key={idx} {...props} />
+          {ProjectsList.map((project, idx) => (
+            <Project key={idx} {...project} onClick={() => setActiveProject(project)} />
           ))}
         </div>
       </div>
+      
+      <Modal isOpen={activeProject !== null} onClose={() => setActiveProject(null)}>
+        {activeProject && (
+          <>
+            <Heading as="h3">{activeProject.title}</Heading>
+            <div className="text--center">
+              <activeProject.Svg className={styles.featureSvg} role="img" />
+            </div>
+            <p className='text--justify'>{activeProject.description}</p>
+            <div className="text--center">
+              {activeProject.tags.map(tag => (
+                <Tag key={tag} tagName={tag} />
+              ))}
+            </div>
+          </>
+        )}
+      </Modal>
     </section>
   );
 }

@@ -14,14 +14,18 @@
 }
 
 .about {
-  display: flex;
+  display: none;
   height: 120px;
   align-items: center;
   justify-content: center;
   font-size: 20px;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 20px 90px;
   background-color: #f2eade;
+}
+
+.about.isActive {
+  display: flex;
 }
 
 [data-theme='dark'] .about {
@@ -46,10 +50,6 @@
 [data-theme='dark'] .hero__subtitle {
   color: #f2eade;
   font-size: 1.5rem;
-}
-
-.active {
-  background-color: #fcebd2;
 }
 
 .heroControls {
@@ -84,6 +84,10 @@
 
 [data-theme='dark'] .heroButton:hover {
   box-shadow: 0 0 6px rgba(253, 249, 241, 0.8);
+}
+
+.active {
+  background-color: #fdf9f1;
 }
 
 .linkSvg {
