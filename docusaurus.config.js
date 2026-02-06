@@ -27,7 +27,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'gaelle-huart', // Usually your GitHub org/user name.
+  organizationName: 'Gaelle-Huart', // Usually your GitHub org/user name.
   projectName: 'portfolio', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -61,7 +61,7 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
         defaultMode: 'light',
-        respectPrefersColorScheme: false,
+        respectPrefersColorScheme: true,
       },
       navbar: {
         logo: {
