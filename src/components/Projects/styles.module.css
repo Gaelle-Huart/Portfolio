@@ -62,6 +62,16 @@
   box-shadow: 0 0 6px rgba(12, 38, 58, 0.8);
 }
 
+[data-theme='dark'] .seeButton {
+  color: #f2eade;
+  background: #0c263a;
+  box-shadow: 0 0 6px rgba(253, 249, 241, 0.4);
+}
+
+[data-theme='dark'] .seeButton:hover {
+  box-shadow: 0 0 6px rgba(253, 249, 241, 0.8);
+}
+
 @media screen and (max-width: 996px) {
   .cardContainer {
     height: fit-content;

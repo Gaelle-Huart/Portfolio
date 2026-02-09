@@ -37,6 +37,10 @@
   box-shadow: 0 0 6px rgba(12, 38, 58, 0.8);
 }
 
+[data-theme='dark'] .modal {
+  background: #034a6e;
+}
+
 [data-theme='dark'] .close {
   color: #f2eade;
   background-color: #0c263a;
