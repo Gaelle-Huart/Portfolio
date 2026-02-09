@@ -43,7 +43,7 @@
 }
 
 [data-theme='dark'] .hero__title {
-  color: #c9bca7;
+  color: #f2eade;
   font-size: 3rem;
 }
 
@@ -103,7 +103,7 @@
 }
 
 [data-theme='dark'] .linkSvg {
-  background-color: #c9bca7;
+  background-color: #f2eade;
   box-shadow: 0 0 6px rgba(253, 249, 241, 0.4);
 }
 

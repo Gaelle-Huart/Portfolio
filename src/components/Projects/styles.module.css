@@ -18,11 +18,12 @@
 
 .cardContainer {
   height: 400px;
+  justify-content: center;
   background-color: #fdf9f1;
   border: none;
   border-radius: 20px;
   padding: 5px;
-  margin: 10px 0 15px 0;
+  margin: 15px 0 15px 0;
   transition: transform 0.2s ease;
   cursor: pointer;
   box-shadow: 0 0 8px rgba(12, 38, 58, 0.3);
