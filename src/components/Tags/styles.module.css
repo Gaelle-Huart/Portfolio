@@ -2,6 +2,7 @@
   width: fit-content;
   padding: 3px 5px 3px 5px;
   margin: 0 5px 15px;
+  background-color: #fdf9f1;
   border-radius: 8px;
   font-size: 15px;
   font-weight: 500;
@@ -41,7 +42,7 @@
 }
 
 .seo {
-  border: 4px solid #d7f9ad;
+  border: 4px solid #aec98c;
 }
 
 .accessibility {
