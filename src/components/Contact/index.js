@@ -38,7 +38,7 @@ export default function Contact() {
               <textarea id='message' className={`${styles.field} ${styles.message}`} placeholder='Enter your message' name='message' required></textarea>
           </div>
           <button type='submit' onClick={Info}>Send Message</button>
-          <div className={styles.info}>
+          <div className={styles.info} role='status'>
             <span id='sent' className={styles.success}>Message sent successfully!</span>
             <span id='cant' className={styles.error}>Fields can't be empty!</span>
           </div>

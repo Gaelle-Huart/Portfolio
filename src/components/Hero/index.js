@@ -5,22 +5,23 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 
+/* simplifier la liste */
 const aboutLines = [
   { 
     id: "firstLine", 
-    text: "Hello, I am Gaelle Huart, an Integrator developer passionate about the connection between web design and efficiency." 
+    text: "Hello, I am Gaelle Huart, an Integrator developer passionate about the connection between web design and efficiency. ►" 
   },
   { 
     id: "secondLine", 
-    text: "Formerly a painter/illustrator, I discovered web development through an OpenClassrooms course, where I realized that my artistic eye and technical logic are a powerful duo." 
+    text: "Formerly a painter/illustrator, I discovered web development through an OpenClassrooms course, where I realized that my artistic eye and technical logic are a powerful duo. ►" 
   },
   { 
     id: "thirdLine", 
-    text: "I am proficient in React, JavaScript and Sass, with particular expertise in design and interactivity, developed from the very beginning of my learning curve." 
+    text: "I am proficient in React, JavaScript and Sass, with particular expertise in design and interactivity, developed from the very beginning of my learning curve. ►" 
   },
   { 
     id: "fourthLine", 
-    text: "My approach combines Agile methodology and great attention to detail, because I believe that elegant code and perfect UX should walk hand in hand." 
+    text: "My approach combines Agile methodology and great attention to detail, because I believe that elegant code and perfect UX should walk hand in hand. ►" 
   },
   { 
     id: "fifthLine", 
@@ -56,7 +57,7 @@ export default function Hero() {
         </Heading>
         <p className={styles.hero__subtitle}>{siteConfig.tagline}</p>
       </div>
-      <div className="container">
+      <div className="container" aria-live="polite">
         {aboutLines.map(line => (
           <p
             key={line.id}

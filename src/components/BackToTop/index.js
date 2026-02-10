@@ -16,7 +16,7 @@ export default function BackToTop() {
   return (
     <a
       href="#top"
-      aria-label="Retour en haut"
+      aria-label="Back to top"
       className={`${styles.backToTop} ${visible ? styles.show : ""}`}
     >
       ^
