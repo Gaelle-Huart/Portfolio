@@ -5,12 +5,22 @@ const Card = ({
   className, // Custom classes for the container card
   style, // Custom styles for the container card
   children, // Content to be included within the card
-  onClick
+  onClick,
+  backgroundImg,
+  alt, // Alternative text for the background image, used for accessibility
 }) => {
+  const cardStyle = {
+    ...style,
+    ...(backgroundImg && {
+      backgroundImage: `url(${backgroundImg})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    }),
+  };
   return (
-    <div className={clsx('card', className)} style={style} onClick={onClick}>
+    <div className={clsx('card', className)} style={cardStyle} onClick={onClick} alt={alt}>
       {children}
-    </div>
+    </div> 
   );
 };
 export default Card;

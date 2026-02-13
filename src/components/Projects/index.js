@@ -9,7 +9,8 @@ import Modal from '../Modal';
 const ProjectsList = [
   {
     title: 'OhmyFood',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    square: require('/static/img/Ohmyfood_square.png').default,
+    wide: require('/static/img/Ohmyfood_wide.png').default,
     resume: 'Mobile first website for a gourmet application...',
     description: (
       <>
@@ -21,7 +22,8 @@ const ProjectsList = [
   },
   {
     title: 'Sophie Bluel',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    square: require('/static/img/SophieBluel_square.png').default,
+    wide: require('/static/img/SophieBluel_wide.png').default,
     resume: 'Portfolio website for an interior designer...',
     description: (
       <>
@@ -33,7 +35,8 @@ const ProjectsList = [
   },
   {
     title: 'Kasa',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    square: require('/static/img/Kasa_square.png').default,
+    wide: require('/static/img/Kasa_wide.png').default,
     resume: 'Rental application with a lot of design elements...',
     description: (
       <>
@@ -45,7 +48,8 @@ const ProjectsList = [
   },
   {
     title: 'Nina Carducci',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    square: require('/static/img/NinaCarducci_square.png').default,
+    wide: require('/static/img/NinaCarducci_wide.png').default,
     resume: 'Optimization of a photographer website...',
     description: (
       <>
@@ -57,7 +61,8 @@ const ProjectsList = [
   },
   {
     title: '724Events',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    square: require('/static/img/724events_square.png').default,
+    wide: require('/static/img/724events_wide.png').default,
     resume: 'Debugging and testing of a website...',
     description: (
       <>
@@ -69,7 +74,8 @@ const ProjectsList = [
   },
   {
     title: 'ArgentBank',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    square: require('/static/img/ArgentBank_square.png').default,
+    wide: require('/static/img/ArgentBank_wide.png').default,
     resume: 'Frontend of an online banking application...',
     description: (
       <>
@@ -81,21 +87,20 @@ const ProjectsList = [
   },
 ];
 
-function Project({ Svg, title, resume, tags, onClick }) {
+function Project({ square, title, resume, tags, onClick }) {
   return (
     <div className={clsx('col col--4')}>
-      <Card className={styles.cardContainer} onClick={onClick}>
-        <div className="text--center">
-          <Svg className={styles.featureSvg} role="img" />
-        </div>
-        <div className="padding-horiz--md">
-          <Heading as="h3" className='text--center'>{title}</Heading>
-          <p className='text--center summary'>{resume}</p>
-        </div>
-        <div className="text--center padding-horiz--md padding-vertic--md">
-          {tags.map((tag) => (
-            <Tag key={tag} tagName={tag} />
-          ))}
+      <Card className={styles.cardContainer} onClick={onClick} backgroundImg={square} alt={title}>
+        <div className={styles.dusk}>
+          <div className="padding-horiz--md">
+            <Heading as="h3" className='text--center'>{title}</Heading>
+            <p className='text--center summary'>{resume}</p>
+          </div>
+          <div className="text--center padding-horiz--md padding-vertic--md">
+            {tags.map((tag) => (
+              <Tag key={tag} tagName={tag} />
+            ))}
+          </div>
         </div>
       </Card>
     </div>
@@ -120,7 +125,7 @@ export default function Projects() {
           <>
             <Heading as="h3">{activeProject.title}</Heading>
             <div className="text--center">
-              <activeProject.Svg className={styles.featureSvg} role="img" alt={activeProject.title} />
+              <activeProject.Png className={styles.squareImg} role="img" alt={activeProject.title} />
             </div>
             <p className='text--justify'>
               <strong>Description:</strong> {activeProject.description}
