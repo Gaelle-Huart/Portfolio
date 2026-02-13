@@ -17,7 +17,7 @@ const ProjectsList = [
         This mobile first website is showcasing the front end of a gourmet application allowing the users to select a restaurant, take an order online and eat their meal as soon as they step foot into it.
       </>
     ),
-    tags: ['HTML', 'SASS', 'Figma', 'Responsive Design'],
+    tags: ['HTML', 'SASS', 'Figma', 'Responsive'],
     more: 'A filter system could be a good addition to the project, allowing the users to sort the restaurants by cuisine, price or rating in addition to the location.'
   },
   {
@@ -92,14 +92,14 @@ function Project({ square, title, resume, tags, onClick }) {
     <div className={clsx('col col--4')}>
       <Card className={styles.cardContainer} onClick={onClick} backgroundImg={square} alt={title}>
         <div className={styles.dusk}>
-          <div className="padding-horiz--md">
-            <Heading as="h3" className='text--center'>{title}</Heading>
-            <p className='text--center summary'>{resume}</p>
-          </div>
-          <div className="text--center padding-horiz--md padding-vertic--md">
-            {tags.map((tag) => (
-              <Tag key={tag} tagName={tag} />
-            ))}
+          <div className={styles.content}>
+            <Heading as="h3" className={styles.title}>{title}</Heading>
+            <p className={styles.summary}>{resume}</p>
+            <div className="text--center padding-horiz--lw padding-vertic--lw">
+              {tags.map((tag) => (
+                <Tag key={tag} tagName={tag} />
+              ))}
+            </div>
           </div>
         </div>
       </Card>
@@ -124,9 +124,11 @@ export default function Projects() {
         {activeProject && (
           <>
             <Heading as="h3">{activeProject.title}</Heading>
-            <div className="text--center">
-              <activeProject.Png className={styles.squareImg} role="img" alt={activeProject.title} />
-            </div>
+            <img
+              src={activeProject.wide}
+              className={`${styles.wideImg} shadow--tl text--center`}
+              alt={activeProject.title}
+            />
             <p className='text--justify'>
               <strong>Description:</strong> {activeProject.description}
             </p>

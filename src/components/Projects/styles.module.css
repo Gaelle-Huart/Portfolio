@@ -48,9 +48,53 @@
   background: linear-gradient(
     to top,
     rgba(3, 71, 110, 1),
-    rgba(3, 71, 110, 0.6),
-    rgba(3, 71, 110, 0.1)
+    rgba(3, 71, 110, 0.8),
+    rgba(3, 71, 110, 0.1),
+    rgba(3, 71, 110, 0)
   );
+}
+
+[data-theme='dark'] .dusk {
+  background: linear-gradient(
+    to top,
+    rgba(3, 71, 110, 1),
+    rgba(3, 71, 110, 0.8),
+    rgba(3, 71, 110, 0.7),
+    rgba(3, 71, 110, 0.2)
+  );
+}
+
+.content {
+  width: 380px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto;
+  border-radius: 15px;
+  background-color: #fdf9f1;
+}
+
+[data-theme='dark'] .content {
+  background-color: #0c263a;
+}
+
+.title {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.summary {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.wideImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px auto 20px auto;
 }
 
 .seeButton {
@@ -63,7 +107,7 @@
   font-size: 17px;
   font-weight: 700;
   border-radius: 25px;
-  background-color:#fdf9f1;
+  background-color:#f2eade;
   border: none;
   cursor: pointer;
   box-shadow: 0 0 6px rgba(12, 38, 58, 0.4);

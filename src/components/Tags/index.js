@@ -12,7 +12,7 @@ const tagColor = {
   'Unit Testing': styles.unit,
   SEO: styles.seo,
   Accessibility: styles.accessibility,
-  'Responsive Design': styles.responsive,
+  'Responsive': styles.responsive,
   Figma: styles.figma,
 }
 
