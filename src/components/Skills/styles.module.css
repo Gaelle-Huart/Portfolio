@@ -57,7 +57,7 @@
 
 [data-theme='dark'] .skillContainer:hover {
   /* #00649e */
-  box-shadow: 0 0 5px rgba(253, 249, 241, 0.8);
+  box-shadow: 0 0 4px rgba(242, 234, 222, 0.8);
 }
 
 .skill {

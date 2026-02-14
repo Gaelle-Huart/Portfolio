@@ -33,11 +33,12 @@
 
 [data-theme='dark'] .cardContainer {
   background-color: #03476e;
+  box-shadow: 0 0 4px rgba(253, 249, 241, 0.8);
 }
 
-[data-theme='dark'] .cardContainer:hover {
-  box-shadow: 0 0 6px rgba(253, 249, 241, 0.8);
-}
+/* [data-theme='dark'] .cardContainer:hover {
+  box-shadow: 0 0 4px rgba(253, 249, 241, 0.8);
+} */
 
 .dusk {
   position: absolute;
@@ -47,25 +48,35 @@
   justify-content: flex-end;
   background: linear-gradient(
     to top,
-    rgba(3, 71, 110, 1),
-    rgba(3, 71, 110, 0.8),
-    rgba(3, 71, 110, 0.1),
-    rgba(3, 71, 110, 0)
+    rgb(242, 234, 222, 1),
+    rgba(242, 234, 222, 1),
+    rgba(242, 234, 222, 1),
+    rgba(242, 234, 222, 0.5),
+    rgba(242, 234, 222, 0.1),
+    rgba(242, 234, 222, 0),
+    rgba(242, 234, 222, 0),
+    rgba(242, 234, 222, 0)
   );
 }
+
+/* (3, 71, 110) brun ; (242, 234, 222) beige moyen ; (12, 38, 58) bleu sombre ; (0, 62, 98) bleu moyen */
 
 [data-theme='dark'] .dusk {
   background: linear-gradient(
     to top,
-    rgba(3, 71, 110, 1),
-    rgba(3, 71, 110, 0.8),
-    rgba(3, 71, 110, 0.7),
-    rgba(3, 71, 110, 0.2)
+    rgb(12, 38, 58, 1),
+    rgba(12, 38, 58, 1),
+    rgba(12, 38, 58, 1),
+    rgba(12, 38, 58, 0.5),
+    rgba(12, 38, 58, 0.3),
+    rgba(12, 38, 58, 0.2),
+    rgba(12, 38, 58, 0.1)
   );
 }
 
 .content {
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
   height: 140px;
   display: flex;
   flex-direction: column;
@@ -74,10 +85,12 @@
   margin: 0 auto 15px auto;
   border-radius: 15px;
   background-color: #fdf9f1;
+  box-shadow: 0 0 4px rgba(12, 38, 58, 0.4);
 }
 
 [data-theme='dark'] .content {
   background-color: #0c263a;
+  box-shadow: 0 0 4px rgba(242, 234, 222, 0.4);
 }
 
 .title {
@@ -98,18 +111,18 @@
 }
 
 .seeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
   width: 50px;
   height: 50px;
   color: #0c263a;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: center;
   font-size: 17px;
   font-weight: 700;
   border-radius: 25px;
   background-color:#f2eade;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
   box-shadow: 0 0 6px rgba(12, 38, 58, 0.4);
 }
 
@@ -120,15 +133,64 @@
 [data-theme='dark'] .seeButton {
   color: #f2eade;
   background: #0c263a;
-  box-shadow: 0 0 6px rgba(253, 249, 241, 0.4);
+  box-shadow: 0 0 6px rgba(242, 234, 222, 0.4);
 }
 
 [data-theme='dark'] .seeButton:hover {
-  box-shadow: 0 0 6px rgba(253, 249, 241, 0.8);
+  box-shadow: 0 0 6px rgba(242, 234, 222, 0.8);
+}
+
+@media screen and (max-width: 1440px) {
+  .content {
+    width: 90%;
+    height: fit-content;
+    padding: 10px;
+    margin: 15px auto;
+  }
 }
 
 @media screen and (max-width: 996px) {
   .cardContainer {
+    max-width: 400px;
+    height: 400px;
+    margin: 15px auto;
+  }
+  .content {
+    width: inherit;
     height: fit-content;
+    padding: 10px;
+  }
+  .seeButton {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .cardContainer {
+    max-width: 300px;
+    height: 300px;
+  }
+  .content {
+    padding: 5px;
+    margin: 10px;
+  }
+  .title {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  .summary {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+  }
+  p {
+    font-size: 14px;
+    margin: 5px 0 10px 0;
+  }
+  .seeButton {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .wideImg {
+    margin: 5px auto 5px auto;
   }
 }

@@ -6,7 +6,7 @@ const Card = ({
   style, // Custom styles for the container card
   children, // Content to be included within the card
   onClick,
-  backgroundImg,
+  backgroundImg, // URL of the background image for the card
   alt, // Alternative text for the background image, used for accessibility
 }) => {
   const cardStyle = {

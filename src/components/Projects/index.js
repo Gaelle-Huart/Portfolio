@@ -18,7 +18,8 @@ const ProjectsList = [
       </>
     ),
     tags: ['HTML', 'SASS', 'Figma', 'Responsive'],
-    more: 'A filter system could be a good addition to the project, allowing the users to sort the restaurants by cuisine, price or rating in addition to the location.'
+    more: 'A filter system could be a good addition to the project, allowing the users to sort the restaurants by cuisine, price or rating in addition to the location.',
+    url: 'https://github.com/Gaelle-Huart/OpenClassrooms_OhmyFood'
   },
   {
     title: 'Sophie Bluel',
@@ -31,7 +32,8 @@ const ProjectsList = [
       </>
     ),
     tags: ['SASS', 'JavaScript'],
-    more: 'This project could be improved by adding a dark mode toggle that allows the user to switch between light and dark themes.'
+    more: 'This project could be improved by adding a dark mode toggle that allows the user to switch between light and dark themes.',
+    url: 'https://github.com/Gaelle-Huart/OC_Sophie_Bluel'
   },
   {
     title: 'Kasa',
@@ -44,7 +46,8 @@ const ProjectsList = [
       </>
     ),
     tags: ['React', 'SASS'],
-    more: 'The project could be improved by adding a search bar to allow the users to find the property they are looking for more easily.'
+    more: 'The project could be improved by adding a search bar to allow the users to find the property they are looking for more easily.',
+    url: 'https://github.com/Gaelle-Huart/Kasa'
   },
   {
     title: 'Nina Carducci',
@@ -58,6 +61,7 @@ const ProjectsList = [
     ),
     tags: ['JavaScript', 'SASS', 'SEO', 'Accessibility'],
     more: 'The project could be improved by adding a dark mode that would not only highlight the content but also enhance the user experience.',
+    url: 'https://github.com/Gaelle-Huart/Nina_Carducci'
   },
   {
     title: '724Events',
@@ -70,7 +74,8 @@ const ProjectsList = [
       </>
     ),
     tags: ['JavaScript', 'Debbugging', 'Unit Testing'],
-    more: 'The project could be improved by adding a feature allowing the customers to suggest new events.'
+    more: 'The project could be improved by adding a feature allowing the customers to suggest new events.',
+    url: 'https://github.com/Gaelle-Huart/724events'
   },
   {
     title: 'ArgentBank',
@@ -83,7 +88,8 @@ const ProjectsList = [
       </>
     ),
     tags: ['React', 'JavaScript', 'SASS', 'Redux'],
-    more: 'This app could be improved by adding a feature allowing the customers to set up notifications for their transactions.'
+    more: 'This app could be improved by adding a feature allowing the customers to set up notifications for their transactions.',
+    url: 'https://github.com/Gaelle-Huart/ArgentBank-Frontend'
   },
 ];
 
@@ -111,7 +117,7 @@ export default function Projects() {
   const [activeProject, setActiveProject] = useState(null);
   return (
     <section className={styles.section}>
-      <div className="container">
+      <div className={clsx('container', styles.projectsContainer)}>
         <Heading id="projects" as="h2" className={styles.title}>Projects</Heading>
         <div className="row">
           {ProjectsList.map((project, idx) => (
@@ -137,12 +143,10 @@ export default function Projects() {
                 <Tag key={tag} tagName={tag} />
               ))}
             </div>
-            <div className="text--justify">
+            <p className="text--justify">
               <strong>Improvement:</strong> {activeProject.more}
-            </div>
-            <div className="text--center">
-              <button className={styles.seeButton} onClick={() => setActiveProject(null)}>See</button>
-            </div>
+            </p>
+            <a className={styles.seeButton} href={activeProject.url} target="_blank" rel="noopener noreferrer">See</a>
           </>
         )}
       </Modal>

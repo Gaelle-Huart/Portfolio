@@ -1,8 +1,10 @@
 .backdrop {
   position: fixed;
-  top:0; left:0;
-  width:100%; height:100%;
-  background: rgba(0,0,0,0.5);
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(12, 38, 58,0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,11 +32,11 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0 0 6px rgba(12, 38, 58, 0.4);
+  box-shadow: 0 0 4px rgba(12, 38, 58, 0.4);
 }
 
 .close:hover {
-  box-shadow: 0 0 6px rgba(12, 38, 58, 0.8);
+  box-shadow: 0 0 4px rgba(12, 38, 58, 0.8);
 }
 
 [data-theme='dark'] .modal {
@@ -44,9 +46,19 @@
 [data-theme='dark'] .close {
   color: #f2eade;
   background-color: #0c263a;
-  box-shadow: 0 0 6px rgba(253, 249, 241, 0.4);
+  box-shadow: 0 0 4px rgba(253, 249, 241, 0.4);
 }
 
 [data-theme='dark'] .close:hover {
-  box-shadow: 0 0 6px rgba(253, 249, 241, 0.8);
+  box-shadow: 0 0 4px rgba(253, 249, 241, 0.8);
+}
+
+@media screen and (max-width: 444px) {
+  .modal {
+    padding: 1rem;
+    max-width: 90%;
+  }
+  .backdrop {
+    padding: 0.5rem;
+  }
 }
