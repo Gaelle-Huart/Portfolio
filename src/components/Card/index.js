@@ -1,14 +1,17 @@
-import clsx from 'clsx'; // clsx helps manage conditional className names in a clean and concise manner.
+import clsx from 'clsx';
+import { forwardRef } from 'react';
 
 
-const Card = ({
-  className, // Custom classes for the container card
-  style, // Custom styles for the container card
-  children, // Content to be included within the card
+const Card = forwardRef(({
+  className, 
+  style, 
+  children, 
   onClick,
-  backgroundImg, // URL of the background image for the card
-  alt, // Alternative text for the background image, used for accessibility
-}) => {
+  backgroundImg, 
+  alt, 
+  tabIndex, 
+  role, 
+}, ref) => {
   const cardStyle = {
     ...style,
     ...(backgroundImg && {
@@ -17,10 +20,21 @@ const Card = ({
       backgroundPosition: 'center',
     }),
   };
+  const cardFocus = {
+    ...(tabIndex !== undefined && { tabIndex }),
+    ...(role && { role }),
+  }
+  const keyHandler = (event) => {
+    if (!onClick) return;
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      onClick(event);
+    }
+  }
   return (
-    <div className={clsx('card', className)} style={cardStyle} onClick={onClick} alt={alt}>
+    <div ref={ref} className={clsx('card', className)} style={cardStyle} onClick={onClick} alt={alt} role={cardFocus.role} tabIndex={cardFocus.tabIndex} onKeyDown={keyHandler}>
       {children}
     </div> 
   );
-};
+});
 export default Card;

@@ -49,6 +49,14 @@
 /* light grey color for light mode and text was #dee5f2 in the last version. */
 /* light color for hero banner was #f0f8ff. */
 
+:focus-visible {
+  outline: 3px solid #0c263a;
+}
+
+[data-theme='dark'] :focus-visible {
+  outline: 3px solid #f2eade;
+}
+
 .navbar {
   padding-left: 30px;
 }

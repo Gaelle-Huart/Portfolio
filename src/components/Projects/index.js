@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Card from '../Card/index';
@@ -94,9 +94,11 @@ const ProjectsList = [
 ];
 
 function Project({ square, title, resume, tags, onClick }) {
+  const triggerRef = useRef(null);
+
   return (
     <div className={clsx('col col--4')}>
-      <Card className={styles.cardContainer} onClick={onClick} backgroundImg={square} alt={title}>
+      <Card ref={triggerRef} role="button"  tabIndex={0} className={styles.cardContainer} onClick={() => onClick(triggerRef.current)} backgroundImg={square} alt={title}>
         <div className={styles.dusk}>
           <div className={styles.content}>
             <Heading as="h3" className={styles.title}>{title}</Heading>
@@ -115,18 +117,30 @@ function Project({ square, title, resume, tags, onClick }) {
 
 export default function Projects() {
   const [activeProject, setActiveProject] = useState(null);
+  const lastTriggerRef = useRef(null);
+  
+  const handleOpen = (project, triggerinCard) => {
+    lastTriggerRef.current = triggerinCard;
+    setActiveProject(project);
+  };
+
+  const handleClose = () => {
+    setActiveProject(null);
+    setTimeout(() => lastTriggerRef.current?.focus(), 0);
+  };
+
   return (
     <section className={styles.section}>
       <div className={clsx('container', styles.projectsContainer)}>
         <Heading id="projects" as="h2" className={styles.title}>Projects</Heading>
         <div className="row">
           {ProjectsList.map((project, idx) => (
-            <Project key={idx} {...project} onClick={() => setActiveProject(project)} />
+            <Project key={idx} {...project} onClick={() => handleOpen(project, lastTriggerRef.current)} />
           ))}
         </div>
       </div>
       
-      <Modal isOpen={activeProject !== null} onClose={() => setActiveProject(null)}>
+      <Modal isOpen={activeProject !== null} onClose={() => handleClose(lastTriggerRef.current)}>
         {activeProject && (
           <>
             <Heading as="h3">{activeProject.title}</Heading>
