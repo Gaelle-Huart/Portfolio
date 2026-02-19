@@ -34,4 +34,4 @@ I will keep on working on my website from now on, so I'm already thinking of mak
 
 ## Website
 
-[text](https://gaelle-huart.github.io/Portfolio/)
+[Link to the Portfolio](https://gaelle-huart.github.io/Portfolio/)
