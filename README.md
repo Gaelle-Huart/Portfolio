@@ -31,3 +31,7 @@ There is no need to reinvent the wheel so this section is pretty common. That sa
 ## Improvments
 
 I will keep on working on my website from now on, so I'm already thinking of making some tweaks in the future that could improve it some. For example, I could work the touch interactions for the mobile version. I could include a feature allowing the user to download my full CV. Or I could add one that give access to my full contact info. Add an illustrative picture in the Hero. A banner ? Well, many ideas are never too far from my brain so, we'll see! 
+
+## Website
+
+[text](https://gaelle-huart.github.io/Portfolio/)
