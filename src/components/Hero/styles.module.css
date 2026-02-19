@@ -91,6 +91,10 @@
   background-color: #fdf9f1;
 }
 
+[data-theme='dark'] .active {
+  background-color: #03476e;
+}
+
 .linkSvg {
   width: 40px;
   height: 40px;

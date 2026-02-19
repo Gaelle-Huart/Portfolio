@@ -47,6 +47,14 @@
   margin-top: 8px;
 }
 
+.field:focus-visible {
+  outline: 2px solid #0c263a;
+}
+
+[data-theme='dark'] .field:focus-visible {
+  outline: 3px solid #f2eade;
+}
+
 .field::placeholder {
   color: #0c263a;
 }
