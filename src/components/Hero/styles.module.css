@@ -6,6 +6,7 @@
   padding: 4rem 0;
   overflow: hidden;
   background-color: #fdf9f1;
+  scroll-margin-top: 50px;
 }
 
 [data-theme='dark'] .heroBanner {
@@ -113,7 +114,6 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    height: 450px;
     padding: 0.5rem;
     gap: 10px;
   }

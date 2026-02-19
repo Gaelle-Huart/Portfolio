@@ -49,12 +49,21 @@
 /* light grey color for light mode and text was #dee5f2 in the last version. */
 /* light color for hero banner was #f0f8ff. */
 
-:focus-visible {
+:is(button, input, textarea, a):focus-visible {
   outline: 3px solid #0c263a;
 }
 
-[data-theme='dark'] :focus-visible {
+[data-theme='dark'] :is(button, input, textarea, a):focus-visible {
   outline: 3px solid #f2eade;
+}
+
+@supports not selector(:focus-visible) {
+  :is(button, input, textarea, a):focus {
+    outline: 3px solid #0c263a;
+  }
+  [data-theme='dark'] :is(button, input, textarea, a):focus {
+    outline: 3px solid #f2eade;
+  }
 }
 
 .navbar {
@@ -91,4 +100,17 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+			clip-path: inset(50%) !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
 }

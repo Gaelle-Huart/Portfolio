@@ -27,15 +27,15 @@ export default function Contact() {
         <form onSubmit={onSubmit} className={styles.contactForm}>
           <div className={styles.fieldContainer}>
               <label htmlFor='name'>Full Name</label>
-              <input id='name' type='text' className={styles.field} placeholder='Enter your name' name='name' required></input>
+              <input id='name' type='text' className={styles.field} placeholder='Enter your name' title='Enter your name' name='name' required></input>
           </div>
           <div className={styles.fieldContainer}>
               <label htmlFor='email'>Email adress</label>
-              <input id='email' type='text' className={styles.field} placeholder='Enter your email' name='email' required></input>
+              <input id='email' type='text' className={styles.field} placeholder='Enter your email' title='Enter your email' name='email' required></input>
           </div>
           <div className={styles.fieldContainer}>
               <label htmlFor='message'>Your message</label>
-              <textarea id='message' className={`${styles.field} ${styles.message}`} placeholder='Enter your message' name='message' required></textarea>
+              <textarea id='message' className={`${styles.field} ${styles.message}`} placeholder='Enter your message' title='Enter your message' name='message' required></textarea>
           </div>
           <button type='submit' onClick={Info}>Send Message</button>
           <div className={styles.info} role='status'>

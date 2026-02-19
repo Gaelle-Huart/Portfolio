@@ -8,17 +8,15 @@ import Record from '@site/src/components/Record';
 import Contact from '@site/src/components/Contact';
 import BackToTop from '@site/src/components/BackToTop';
 
-/* Dans la partie Hero, rajouter quatre boutons '+' ronds (fond sombre, signe clair) qui lorsqu'on clique dessus font apparaître un autre morceau de texte en remplacement de celui de base. Un cinquième bouton, ciglé à l'éffigie de Github, est un lien qui renvoie à mon profil sur github... À essayer. */
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <div id='top' />
-      <Hero />
+      description="Site protfolio de Gaelle Huart, développeuse web junior. Découvrez mes projets, compétences et parcours professionnel. Contactez-moi pour collaborer ou en savoir plus sur mon travail.">
       <main>
+        <Hero id='top' />
         <Projects />
         <Skills />
         <Record />

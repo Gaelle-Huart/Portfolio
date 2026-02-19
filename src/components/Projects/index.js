@@ -148,6 +148,7 @@ export default function Projects() {
               src={activeProject.wide}
               className={`${styles.wideImg} shadow--tl text--center`}
               alt={activeProject.title}
+              loading='lazy'
             />
             <p className='text--justify'>
               <strong>Description:</strong> {activeProject.description}
@@ -160,7 +161,10 @@ export default function Projects() {
             <p className="text--justify">
               <strong>Improvement:</strong> {activeProject.more}
             </p>
-            <a className={styles.seeButton} href={activeProject.url} target="_blank" rel="noopener noreferrer">See</a>
+            <a className={styles.seeButton} href={activeProject.url} target="_blank" rel="noopener noreferrer">
+              See
+              <span className="sr-only">See {activeProject.title} on GitHub</span>
+            </a>
           </>
         )}
       </Modal>

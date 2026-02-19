@@ -32,14 +32,15 @@ const aboutLines = [
 const linkSVG = [
   {
     Svg: require('@site/static/img/Github-logo.svg').default,
-    alt: 'Github',
+    alt: 'Github Profile',
   }
 ]
 
 function Link({ Svg, alt }) {
   return(
-    <a target="_blank" aria-label="Profil GitHub" className={styles.githubLink} href='https://github.com/Gaelle-Huart'>
+    <a target="_blank" aria-label="GitHub Profile - new window" title={alt} className={styles.githubLink} href='https://github.com/Gaelle-Huart'>
       <Svg className={styles.linkSvg} role="img" alt={alt} />
+      <span className="sr-only">Link to GitHub Profile</span>
     </a>
   )
 }
