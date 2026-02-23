@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Site protfolio de Gaelle Huart, développeuse web junior. Découvrez mes projets, compétences et parcours professionnel. Contactez-moi pour collaborer ou en savoir plus sur mon travail.">
+      description="Gaelle Huart's portfolio website, web dev junior. Discover my projects, skills and professional record. Contact me to collaborate or learn more about my work.">
       <main>
         <Hero id='top' />
         <Projects />

@@ -8,60 +8,18 @@ import Modal from '../Modal';
 
 const ProjectsList = [
   {
-    title: 'OhmyFood',
-    square: require('/static/img/Ohmyfood_square.png').default,
-    wide: require('/static/img/Ohmyfood_wide.png').default,
-    resume: 'Mobile first website for a gourmet application...',
+    title: 'ArgentBank',
+    square: require('/static/img/ArgentBank_square.png').default,
+    wide: require('/static/img/ArgentBank_wide.png').default,
+    resume: 'Frontend of an online banking application...',
     description: (
       <>
-        This mobile first website is showcasing the front end of a gourmet application allowing the users to select a restaurant, take an order online and eat their meal as soon as they step foot into it.
+        In the project, the goal was to implement the frontend of an online banking application with the help of React. Interactivity and reactivity were the main objectives for me, as well as security.
       </>
     ),
-    tags: ['HTML', 'SASS', 'Figma', 'Responsive'],
-    more: 'A filter system could be a good addition to the project, allowing the users to sort the restaurants by cuisine, price or rating in addition to the location.',
-    url: 'https://github.com/Gaelle-Huart/OpenClassrooms_OhmyFood'
-  },
-  {
-    title: 'Sophie Bluel',
-    square: require('/static/img/SophieBluel_square.png').default,
-    wide: require('/static/img/SophieBluel_wide.png').default,
-    resume: 'Portfolio website for an interior designer...',
-    description: (
-      <>
-        A protfolio website for an interior designer meant to be both reactive and intuitive. The project include an administrator interface allowing the designer to modify it with simplicity.
-      </>
-    ),
-    tags: ['SASS', 'JavaScript'],
-    more: 'This project could be improved by adding a dark mode toggle that allows the user to switch between light and dark themes.',
-    url: 'https://github.com/Gaelle-Huart/OC_Sophie_Bluel'
-  },
-  {
-    title: 'Kasa',
-    square: require('/static/img/Kasa_square.png').default,
-    wide: require('/static/img/Kasa_wide.png').default,
-    resume: 'Rental application with a lot of design elements...',
-    description: (
-      <>
-        Kasa is a rental application showcasing many features. The properties to rent are given a lot of design elements that allow the final user to browse seamlessly and in style.
-      </>
-    ),
-    tags: ['React', 'SASS'],
-    more: 'The project could be improved by adding a search bar to allow the users to find the property they are looking for more easily.',
-    url: 'https://github.com/Gaelle-Huart/Kasa'
-  },
-  {
-    title: 'Nina Carducci',
-    square: require('/static/img/NinaCarducci_square.png').default,
-    wide: require('/static/img/NinaCarducci_wide.png').default,
-    resume: 'Optimization of a photographer website...',
-    description: (
-      <>
-        A project focusing on optimization. The photographer had a slow and poorly optimized website which was making its loading rather long. Potential visitors would leave without looking. Post optimization, everything is smooth and fast.
-      </>
-    ),
-    tags: ['JavaScript', 'SASS', 'SEO', 'Accessibility'],
-    more: 'The project could be improved by adding a dark mode that would not only highlight the content but also enhance the user experience.',
-    url: 'https://github.com/Gaelle-Huart/Nina_Carducci'
+    tags: ['React', 'JavaScript', 'SASS', 'Redux'],
+    more: 'This app could be improved by adding a feature allowing the customers to set up notifications for their transactions.',
+    url: 'https://github.com/Gaelle-Huart/ArgentBank-Frontend'
   },
   {
     title: '724Events',
@@ -78,19 +36,61 @@ const ProjectsList = [
     url: 'https://github.com/Gaelle-Huart/724events'
   },
   {
-    title: 'ArgentBank',
-    square: require('/static/img/ArgentBank_square.png').default,
-    wide: require('/static/img/ArgentBank_wide.png').default,
-    resume: 'Frontend of an online banking application...',
+    title: 'Nina Carducci',
+    square: require('/static/img/NinaCarducci_square.png').default,
+    wide: require('/static/img/NinaCarducci_wide.png').default,
+    resume: 'Optimization of a photographer website...',
     description: (
       <>
-        In the project, the goal was to implement the frontend of an online banking application with the help of React. Interactivity and reactivity were the main objectives for me, as well as security.
+        A project focusing on optimization. The photographer had a slow and poorly optimized website which was making its loading rather long. Potential visitors would leave without looking. Post optimization, everything is smooth and fast.
       </>
     ),
-    tags: ['React', 'JavaScript', 'SASS', 'Redux'],
-    more: 'This app could be improved by adding a feature allowing the customers to set up notifications for their transactions.',
-    url: 'https://github.com/Gaelle-Huart/ArgentBank-Frontend'
+    tags: ['JavaScript', 'SASS', 'SEO', 'Accessibility'],
+    more: 'The project could be improved by adding a dark mode that would not only highlight the content but also enhance the user experience.',
+    url: 'https://github.com/Gaelle-Huart/Nina_Carducci'
   },
+  {
+    title: 'Kasa',
+    square: require('/static/img/Kasa_square.png').default,
+    wide: require('/static/img/Kasa_wide.png').default,
+    resume: 'Rental application with a lot of design elements...',
+    description: (
+      <>
+        Kasa is a rental application showcasing many features. The properties to rent are given a lot of design elements that allow the final user to browse seamlessly and in style.
+      </>
+    ),
+    tags: ['React', 'SASS'],
+    more: 'The project could be improved by adding a search bar to allow the users to find the property they are looking for more easily.',
+    url: 'https://github.com/Gaelle-Huart/Kasa'
+  },
+  {
+    title: 'Sophie Bluel',
+    square: require('/static/img/SophieBluel_square.png').default,
+    wide: require('/static/img/SophieBluel_wide.png').default,
+    resume: 'Portfolio website for an interior designer...',
+    description: (
+      <>
+        A protfolio website for an interior designer meant to be both reactive and intuitive. The project include an administrator interface allowing the designer to modify it with simplicity.
+      </>
+    ),
+    tags: ['SASS', 'JavaScript'],
+    more: 'This project could be improved by adding a dark mode toggle that allows the user to switch between light and dark themes.',
+    url: 'https://github.com/Gaelle-Huart/OC_Sophie_Bluel'
+  },
+  {
+    title: 'OhmyFood',
+    square: require('/static/img/Ohmyfood_square.png').default,
+    wide: require('/static/img/Ohmyfood_wide.png').default,
+    resume: 'Mobile first website for a gourmet application...',
+    description: (
+      <>
+        This mobile first website is showcasing the front end of a gourmet application allowing the users to select a restaurant, take an order online and eat their meal as soon as they step foot into it.
+      </>
+    ),
+    tags: ['HTML', 'SASS', 'Figma', 'Responsive'],
+    more: 'A filter system could be a good addition to the project, allowing the users to sort the restaurants by cuisine, price or rating in addition to the location.',
+    url: 'https://github.com/Gaelle-Huart/OpenClassrooms_OhmyFood'
+  }
 ];
 
 function Project({ square, title, resume, tags, onClick }) {

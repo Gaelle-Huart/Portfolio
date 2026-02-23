@@ -5,7 +5,6 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 
-/* simplifier la liste */
 const aboutLines = [
   { 
     id: "firstLine", 
